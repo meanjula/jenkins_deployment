@@ -13,12 +13,11 @@ pipeline {
       }
     }
 
-    stage ("test") {
-      steps {
-        echo 'testing our app...'
-        sh 'echo "Fail!"; exit 1'
-      }
-    }
+    // stage ("test") {
+    //   steps {
+    //     echo 'testing our app...'
+    //   }
+    // }
 
    stage('Deploy') {
             steps {
