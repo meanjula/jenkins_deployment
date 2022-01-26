@@ -27,7 +27,9 @@ pipeline {
                         sh './flakey-deploy.sh'
                     }
 
-  }
+                  }
 
-}
-}
+                }
+            }
+    }
+  }
