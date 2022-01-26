@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png"  href="assets/">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/9d65ca8cf1.js"></script>
+
+</head>
+<body>
+  <button  id="myBtn" title="Go to top">Top</button>
+    <header>
+      <div class="navBar">
+        <img src="assets/A.svg" alt="my-logo"  width="110" height="110">
+        <nav class="nav-item">
+          <a href="#about">About me</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contacts</a>
+        </nav>
+        <a id="menu">
+          <span class="material-icons">
+            menu
+          </span>
+        </a>
+
+      </div>
+      <div class="hero-banner"> 
+        <h1 class="welcome-text">Welcome to Anjula's Portfolio</h1>
+        <div class="text-animation">
+          <h2>I am <span></span></h1>
+        </div>
+        <div id="links">
+          <a class="contact-link" href="https://www.linkedin.com/in/meanjula/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="contact-link" href="https://github.com/meanjula" target="_blank" rel="noopener">
+              <i class="fab fa-github-square"></i>
+          </a>
+      </div> 
+    </header>
+    <main> 
+      <section id="about"> 
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="box">
+            <img src="images/anjula1.jpg"anjula's photo" class="about-img" width="300" height="200">
+            <p>Hello, my name is Anjula Ghale Timsina. I’m a web developer from Helsinki, Finland.  I’m currently studying Full Stack Web Developer program in Helsinki Business College to nurture my web development skills and take it to next level. My core interest in web development lies in user interface design and Web development as I love doing creative and artistic tasks. 
+            Here are few of my past projects that I have enjoyed working on. I would love to collaborate and contribute if you have got any interesting UI design/Front-end development projects. You can find me on LinkedIn and Instagram or reach me via email.</p>
+          </div>     
+        </div>
+      </section>     
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="card-box">
+            <div class="card">
+              <img src="images/pokemon.png" alt="animals image" class="projImg" width="300" height="200"> 
+              <div class="content">
+                <h3>Pokemon App</h3> 
+                <p>This is the Pokemon app created using react usestate and useeffect hook and used pokeApi for fetching dynamic data.</p>
+                <a href="https://github.com/meanjula/pokemon_app" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="images/solar.png" alt="animals image" class="projImg" width="300" height="200"> 
+              <div class="content">
+                <h3>Mass-SolarSystem</h3> 
+                <p>This is the project completed with vanilla javascript where mass of a object is calculated in different planet of solar system.</p>
+                <a href="https://github.com/meanjula/JS_30_days_challange/tree/master/day_24" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/weather.png" alt="animals image" class="projImg" width="300" height="200"> 
+              <div class="content">
+                <h3>Countries_Weather</h3> 
+                <p>This is the countries weather app created using react, weather data is fetched using axios from openweather API.</p>
+                <a href="https://github.com/meanjula/countries_data" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+                <a href="https://anjulas-countries-app.netlify.app" target="_blank" rel="noopener"><span class="material-icons" style="color: black;">
+                  language
+                  </span>
+                  </a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/feedcat.png" alt="animals image" class="projImg" width="300" height="200"> 
+              <div class="content">
+                <h3>Feed the cat</h3> 
+                <p>This is the speed game created using react and class component to handle the state. Final product is deployed in netlify.</p>
+                <a href="https://github.com/meanjula/animals_card" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+                <a href="https://priceless-roentgen-f4e83a.netlify.app" target="_blank" rel="noopener"><span class="material-icons" style="color: black;">
+                  language
+                  </span></a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="images/Product_Landing.png" alt="productl anding project image"  class="projImg" width="300" height="200">
+              <div class="content">
+                <h3>Responsive webdesign</h3>
+                <p>This responsive web design project includes 5 mini projects which are done using html and css.</p>
+                <a href="https://github.com/meanjula/responsive_webdesign" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/calorieTracker.png" alt="calorie tracker image" class="projImg" width="300" height="200">
+              <div class="content">
+                <h3>Calorie tracker</h3>
+                <p>Calorie tracker app is made using javascript, module bundler called parcel, and chartr.js.</p>
+                <a href="https://github.com/meanjula/calorie-tracker" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section> 
+      
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="card-box">
+            <div class="card"> 
+              <div class="icon-div">     
+              <img src="https://toppng.com/uploads/preview/html5-js-css3-logo-png-11536003913vd86ju9pc1.png"  alt="html5 js css3"  class="skill-icon">
+              <img src="./images/figma.png" alt="figma" class="skill-icon" >   
+              </div>
+              <progress class="file" value="95" max="100"></progress>
+              <a href="https://github.com/meanjula/responsive_webdesign/blob/master/project_4/documentation.html" target="_blank" rel="noopener">html5 CSS project</a>
+              
+            </div>
+            <div class="card">
+              <div class="icon-div">
+              <img src="https://toppng.com/uploads/preview/react-logo-icon-11609374122d9vkbptqap.png" alt="react" class="skill-icon"  >
+              <img src="images/typescript.png" alt="react" class="skill-icon"  >
+              </div>  
+              <progress id="css" class="file" value="90" max="100" ></progress>
+              <a href="https://github.com/meanjula/first_blog_with_react/blob/main/src/index.css" target="_blank" rel="noopener">React project</a>
+            </div>
+            <div class="card"> 
+              <div class="icon-div">
+              <img class="skill-icon" src="https://toppng.com/uploads/preview/nodejs-logo-vector-115739710199ssrzzitws.jpg" alt="node.js"  style="object-fit: cover;">
+            </div>
+              <progress id="js"  class="file" value="80" max="100"></progress>
+              <a href="https://github.com/meanjula/JS_30_days_challange" target="_blank" rel="noopener">node and express </a>
+
+            </div>
+            <div class="card">
+              <div class="icon-div">
+              <img src="https://toppng.com/uploads/preview/mysql-logo-text-11609369806d1rsoukg5m.png" alt="mysql"  class="skill-icon">
+              <img src="https://toppng.com/uploads/preview/mongo-db-design-mongodb-logo-mongodb-11562879783bwj2cknalk.png" alt="mongo db design" class="skill-icon" >
+              </div>
+              <progress id="react"  class="file" value="50" max="100"></progress>
+              <a href="https://github.com/meanjula/controlled_form" target="_blank" rel="noopener">React skill</a>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section id="contact">
+        <form class="container">
+            <h3>Contact me</h3>        
+            <div class="form-group">
+              <label for="first">First name</label>
+              <input type="text" id="first" required/>
+            </div>
+            <div class="form-group">
+              <label for="last">Last name</label>
+              <input type="text" id="last" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" required/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="3" cols="20"></textarea>
+            </div>
+            <input type="submit" value="Send message" id="submit">
+
+        </form>
+        
+      </section> 
+    </main>
+    <footer>
+    <p>&copy;2021 Anjula Timsina</p>
+    </footer>
+  <script src="index.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,609 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+:root {
+  --bg-color: rgb(91, 117, 129);
+  --dark-text: rgb(1, 12, 17);
+  --blue-color: rgba(28, 103, 141, 0.5);
+  --white-color: white;
+  --dark-color: #000;
+  --yellow-color: rgb(191, 137, 12);
+  --main-font: "Montserrat", sans-serif;
+  --side-font: "Lato", sans-serif;
+}
+a {
+  color: var(--yellow-color);
+  text-decoration: none;
+}
+p {
+  word-spacing: 0.3rem;
+  font-family: var(--side-font);
+  font-size: 1rem;
+  line-height: 32px;
+}
+h2 {
+  padding: 1rem;
+  color: var(--white-color);
+}
+.bg {
+  background-color: var(--dark-color);
+  height: 5rem;
+}
+body {
+  font-family: var(--main-font);
+  text-align: start;
+  min-height: 100vh;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+  background-color: var(--bg-color);
+  font-weight: 400;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navBar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+header {
+  background: url("images/darkTheme.jpg") no-repeat fixed center center/cover;
+  height: 95vh;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 1.1rem;
+  position: relative;
+  background-color: rgb(29, 25, 25);
+}
+
+/*to place item in center display parent element flex and center the proprty align-item and justify content */
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#menu {
+  display: none;
+}
+.nav-item a {
+  color: var(--white-color);
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0 1rem;
+  transition: all 0.5s ease-out;
+}
+.nav-item a:hover,
+a:focus {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.welcome-text {
+  font-size: 3.5rem;
+  word-spacing: 0.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  font-family: var(--side-font);
+  text-shadow: 0px 0px 5px rgb(0, 68, 255);
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+/**************** text animation ****************/
+.text-animation {
+  margin-top: 5rem;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.text-animation h2 {
+  font-family: var(--side-font);
+  font-weight: 400;
+}
+h2 span::before {
+  content: "";
+  color: var(--yellow-color);
+  font-family: var(--main-font);
+  font-weight: 20;
+  animation: profile 5s infinite;
+}
+i {
+  display: block;
+  font-size: 2rem;
+}
+@keyframes profile {
+  0% {
+    content: "a FullStack Developer";
+  }
+  50% {
+    content: "a creative UI Designer";
+  }
+  100% {
+    content: "a continuous learner";
+  }
+}
+/**************** star animation ****************/
+.starClas {
+  position: absolute;
+  z-index: 2;
+  animation-iteration-count: infinite;
+}
+.starClas0 {
+  top: 150px;
+  left: 120px;
+  animation-name: twinkle-1;
+  animation-duration: 8s;
+}
+
+.starClas2 {
+  top: 200px;
+  left: 300px;
+  animation-name: twinkle-2;
+  animation-duration: -3s;
+}
+.starClas4 {
+  top: 30%;
+  right: 10%;
+  animation-name: twinkle-1;
+  animation-duration: 4s;
+}
+.starClas6 {
+  top: 10%;
+  right: 5%;
+  animation-name: twinkle-2;
+  animation-duration: 3s;
+}
+.starClas8 {
+  top: 32%;
+  left: 35%;
+  animation-name: twinkle-2;
+  animation-duration: 2s;
+}
+.starClas10 {
+  top: 15%;
+  left: 65%;
+  animation-name: twinkle-1;
+  animation-duration: 4s;
+}
+.starClas12 {
+  top: 30%;
+  left: 75%;
+  animation-name: twinkle-2;
+  animation-duration: 3s;
+}
+.starClas14 {
+  top: 10%;
+  left: 22%;
+  animation-name: twinkle-1;
+  animation-duration: 2s;
+}
+.starClas16 {
+  top: 15%;
+  left: 45%;
+  animation-name: twinkle-2;
+  animation-duration: 5s;
+}
+.starClas18 {
+  top: 15%;
+  left: 30%;
+  animation-name: twinkle-1;
+  animation-duration: 5s;
+}
+.starClas20 {
+  top: 25%;
+  left: 55%;
+  animation-name: twinkle-2;
+  animation-duration: 5s;
+}
+
+@keyframes twinkle-1 {
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes twinkle-2 {
+  20% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+}
+section {
+  padding: 5rem 0;
+  min-height: 500px;
+}
+
+/**************** project area ****************/
+
+#projects .card-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.content h3,
+p,
+a {
+  text-align: left;
+  padding: 0.5rem;
+}
+.card:hover {
+  background-color: rgba(28, 103, 141, 0.5);
+  color: var(--white-color);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+/**************** projects, skills common area ****************/
+
+.card {
+  background-color: var(--white-color);
+  flex-basis: 30%;
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/**************** About area ****************/
+
+#about {
+  background-color: #f8f3ea;
+  color: var(--darkText);
+  width: 90%;
+  /* height: 400px; */
+  margin: 2rem 3rem;
+}
+#about h2 {
+  color: var(--dark-color);
+}
+/* #about .container {
+  padding-top: 1rem;
+} */
+.about-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+#about .box {
+  display: flex;
+  margin: 1rem;
+}
+#about p {
+  text-align: justify;
+  margin: 0 1rem;
+  line-height: 2.3rem;
+}
+/**************** Skills area ****************/
+
+#skills .card-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#skills .card {
+  padding: 1rem 0;
+}
+
+#skills a {
+  display: block;
+  text-align: center;
+  margin: 2rem;
+}
+
+#skills .card:hover {
+  background-color: var(--dark-color);
+}
+#skills .material-icons,
+#skills i {
+  margin: 20px;
+  display: inline-block;
+  font-size: 5rem;
+  color: rgb(12, 65, 87);
+}
+
+skills progress[value] {
+  height: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--yellow-color);
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: rgb(12, 65, 87);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.card .skill-icon {
+  height: 100px;
+  width: 150px;
+  object-fit: contain;
+  margin: 50px 20px;
+}
+.icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************** Contact area ****************/
+#contact {
+  text-align: center;
+}
+section#contact {
+  padding-bottom: 0;
+}
+#contact h3 {
+  height: 5rem;
+  padding-top: 2rem;
+}
+#contact .container {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  font-size: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+
+input {
+  height: 1.2rem;
+  padding: 1rem;
+}
+input,
+textarea {
+  border-radius: 5px;
+  border: none;
+  margin-left: 3rem;
+}
+.form-group textarea {
+  height: auto;
+  padding: 1rem;
+}
+label[for="message"] {
+  margin-left: 2rem;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--yellow-color);
+  border: none;
+  width: 40%;
+  height: 40px;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+  width: 35%;
+}
+
+footer p {
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+}
+/**************** top button ****************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--yellow-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+@media (max-width: 899px) {
+  .card {
+    flex-basis: 40%;
+  }
+}
+/**************** Tablet support ****************/
+@media (max-width: 899px) {
+  .navBar {
+    height: 10%;
+  }
+  .welcome-text {
+    font-size: 3rem;
+  }
+  #skills .card {
+    margin: 2rem 0;
+  }
+  #skills .card-box {
+    display: block;
+  }
+  #skills .container {
+    width: 90%;
+  }
+  .card {
+    flex-basis: 40%;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .navBar {
+    position: relative;
+  }
+  /*dispaly none makes menu item invisible*/
+  .nav-item {
+    display: none;
+    position: absolute;
+    background-color: #093557;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .nav-item a {
+    display: flex;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    justify-content: center;
+    background-color: var(--blue-color);
+  }
+  .material-icons {
+    color: white;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin-right: 2rem;
+  }
+  .nav-item a:hover {
+    background-color: var(--blue-color);
+  }
+  .welcome-text {
+    font-size: 1.5rem;
+    text-shadow: none;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+  #projects .card-box {
+    display: block;
+    margin: 0;
+  }
+  .card {
+    margin: 1rem;
+    padding: 5px;
+  }
+  #about {
+    max-width: 80vw;
+  }
+
+  #about .box {
+    display: block;
+  }
+  #about p {
+    margin: 0;
+    line-height: 2.3rem;
+  }
+  #contact .container {
+    font-size: 1rem;
+  }
+  .form-group {
+    display: block;
+    text-align: initial;
+  }
+  label {
+    width: 40%;
+    margin: 0.5rem 0;
+  }
+  input,
+  textarea {
+    margin-left: 0rem;
+  }
+  label[for="message"] {
+    margin-left: 0rem;
+  }
+  input#submit {
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  p,
+  a {
+    font-size: 0.8rem;
+    line-height: #f8f3ea;
+  }
+  #contact .container {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .welcome-text {
+    font-size: 1.5rem;
+    text-shadow: none;
+    color: rgb(206, 83, 26);
+  }
+  .logo {
+    width: 6rem;
+    height: 2rem;
+  }
+  .hero-banner {
+    height: 70vh;
+  }
+  .form-group textarea,
+  input {
+    width: 80%;
+    margin-left: 1rem;
+  }
+
+  footer p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  section {
+    padding: 1rem;
+  }
+}

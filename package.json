@@ -1,0 +1,23 @@
+{
+  "name": "jenkins_deployment",
+  "version": "1.0.0",
+  "description": "## [meanjula.github.io](https://meanjula.github.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meanjula/jenkins_deployment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meanjula/jenkins_deployment/issues"
+  },
+  "homepage": "https://github.com/meanjula/jenkins_deployment#readme",
+  "dependencies": {
+    "react-icons": "^4.3.1"
+  }
+}

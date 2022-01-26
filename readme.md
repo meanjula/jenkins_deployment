@@ -1,13 +1,34 @@
-# Learning about cicd
+# Anjula's Portfolio
 
-[![CICD](https://github.com/meanjula/CICD/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/meanjula/CICD/actions/workflows/main.yml)
+## [meanjula.github.io](https://meanjula.github.io/)
 
-## .github
+## Table of contents
 
-### workflows
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Screenshots](#portfolio-screenshots)
+- [Sources](#Sources)
 
-#### main.yml
+## General info
 
--
+Portfolio page created using html, css and javascript.
+Icons are imported from fontawesome and material icons page.
+Favicon created using figma and favicon converter.
+Designed logo in figma.
 
-Testing my brach Abel
+## Screenshots
+
+![portfolio screenshot1](images/portfolio.png)
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- Figma
+- favicon generator
+
+## Sources
+
+Images from [Unsplash](https://unsplash.com/).
+Favicon generator source [favicon](https://favicon.io/favicon-converter/).
