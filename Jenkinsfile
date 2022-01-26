@@ -2,6 +2,8 @@
 pipeline {
   agent any
 
+  tools {nodejs "node"}
+
   stages {
 
     stage ("build") {
@@ -18,11 +20,12 @@ pipeline {
       }
     }
 
-    stage ("deploy") {
-      steps {
-        echo 'deploying our app...'
-      }
-    }
+   stage('Deploy') {
+            steps {
+                timeout(time: 3, unit: 'MINUTES') {
+                    retry(5) {
+                        sh './flakey-deploy.sh'
+                    }
 
   }
 
